@@ -1,0 +1,17 @@
+stages:
+  - build
+  - test
+
+demo-job-build-code:
+  stage: build
+  script:
+    - echo "Running demo for checking Ruby version and executing Ruby files"
+demo-test-code-job-first:
+  stage: test
+  script:
+    - echo “If the demo files got built properly, test the build through test files
+
+demo-test-code-job-second:
+  stage: test
+  script:
+    - echo “If the demo built went through, test it with some more test files”
